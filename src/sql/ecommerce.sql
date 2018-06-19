@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `ecommerce` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `ecommerce`;
--- MySQL dump 10.13  Distrib 5.7.9, for osx10.9 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
--- Host: localhost    Database: ecommerce
+-- Host: 127.0.0.1    Database: ecommerce
 -- ------------------------------------------------------
--- Server version	5.5.32-MariaDB
+-- Server version	5.7.21
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,9 @@ DROP TABLE IF EXISTS `customers`;
 CREATE TABLE `customers` (
   `id_customer` bigint(20) NOT NULL AUTO_INCREMENT,
   `cpf` varchar(11) NOT NULL,
+  `name` varchar(150) NOT NULL,
   `address` varchar(255) NOT NULL,
+  `state` varchar(100) NOT NULL,
   `city` varchar(200) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `email` varchar(150) NOT NULL,
@@ -35,15 +37,6 @@ CREATE TABLE `customers` (
   PRIMARY KEY (`id_customer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `customers`
---
-
-LOCK TABLES `customers` WRITE;
-/*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-/*!40000 ALTER TABLE `customers` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `invoices`
@@ -61,15 +54,6 @@ CREATE TABLE `invoices` (
   CONSTRAINT `fk_invoice_order` FOREIGN KEY (`id_order`) REFERENCES `orders` (`id_order`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `invoices`
---
-
-LOCK TABLES `invoices` WRITE;
-/*!40000 ALTER TABLE `invoices` DISABLE KEYS */;
-/*!40000 ALTER TABLE `invoices` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `order_items`
@@ -92,15 +76,6 @@ CREATE TABLE `order_items` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `order_items`
---
-
-LOCK TABLES `order_items` WRITE;
-/*!40000 ALTER TABLE `order_items` DISABLE KEYS */;
-/*!40000 ALTER TABLE `order_items` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `orders`
 --
 
@@ -109,20 +84,15 @@ DROP TABLE IF EXISTS `orders`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `orders` (
   `id_order` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id_customer` bigint(20) NOT NULL,
   `customer_cpf` varchar(11) NOT NULL,
   `date` datetime NOT NULL,
-  PRIMARY KEY (`id_order`)
+  PRIMARY KEY (`id_order`),
+  KEY `fk_customer_cpf_idx` (`customer_cpf`),
+  KEY `fk_customer_id_idx` (`id_customer`),
+  CONSTRAINT `fk_customer_id` FOREIGN KEY (`id_customer`) REFERENCES `customers` (`id_customer`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `orders`
---
-
-LOCK TABLES `orders` WRITE;
-/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `payments`
@@ -144,15 +114,6 @@ CREATE TABLE `payments` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `payments`
---
-
-LOCK TABLES `payments` WRITE;
-/*!40000 ALTER TABLE `payments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `payments` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `product_categories`
 --
 
@@ -167,15 +128,6 @@ CREATE TABLE `product_categories` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `product_categories`
---
-
-LOCK TABLES `product_categories` WRITE;
-/*!40000 ALTER TABLE `product_categories` DISABLE KEYS */;
-/*!40000 ALTER TABLE `product_categories` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `products`
 --
 
@@ -187,20 +139,12 @@ CREATE TABLE `products` (
   `id_category` bigint(20) NOT NULL,
   `name` varchar(255) NOT NULL,
   `stock_quantity` int(11) NOT NULL,
+  `price` double NOT NULL,
   PRIMARY KEY (`id_product`),
   KEY `fk_product_category_idx` (`id_category`),
   CONSTRAINT `fk_product_category` FOREIGN KEY (`id_category`) REFERENCES `product_categories` (`id_product_category`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `products`
---
-
-LOCK TABLES `products` WRITE;
-/*!40000 ALTER TABLE `products` DISABLE KEYS */;
-/*!40000 ALTER TABLE `products` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `stock_history_entries`
@@ -220,15 +164,6 @@ CREATE TABLE `stock_history_entries` (
   CONSTRAINT `fk_stock_entry_product` FOREIGN KEY (`id_product`) REFERENCES `products` (`id_product`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `stock_history_entries`
---
-
-LOCK TABLES `stock_history_entries` WRITE;
-/*!40000 ALTER TABLE `stock_history_entries` DISABLE KEYS */;
-/*!40000 ALTER TABLE `stock_history_entries` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -239,4 +174,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-01-21 18:12:51
+-- Dump completed on 2018-06-18 21:51:38
