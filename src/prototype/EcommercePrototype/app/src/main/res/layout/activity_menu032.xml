@@ -23,16 +23,18 @@
         android:onClick="onProductCategoryEnrollClick"/>
 
     <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatório de Pedidos"
+        android:onClick="onOrdersReportClick"/>
+
+    <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Relatório de Estoque"
         android:onClick="onStockReportClick"/>
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Relatório de Vendas"
-        android:onClick="onOrdersReportClick"/>
+
 </LinearLayout>
