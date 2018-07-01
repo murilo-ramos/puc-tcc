@@ -34,7 +34,7 @@
             android:id="@+id/buttonCartProductSearch"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Adicionar Carrinho"
+            android:text="Adicionar ao Carrinho"
             android:textSize="10sp" />
 
     </LinearLayout>
