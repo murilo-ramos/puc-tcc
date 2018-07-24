@@ -13,6 +13,11 @@ public class MenuActivity032 extends AppCompatActivity {
         setContentView(R.layout.activity_menu032);
     }
 
+    public void onCustomerEnrollClick(View view) {
+        Intent intent = new Intent(MenuActivity032.this, CustomerManagementActivity.class);
+        this.startActivity(intent);
+    }
+
     public void onProductEnrollClick(View view) {
         Intent intent = new Intent(MenuActivity032.this, ProductManagementActivity.class);
         this.startActivity(intent);

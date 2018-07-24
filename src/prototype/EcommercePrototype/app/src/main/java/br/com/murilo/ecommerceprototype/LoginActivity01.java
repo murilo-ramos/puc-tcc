@@ -28,9 +28,4 @@ public class LoginActivity01 extends AppCompatActivity {
 
         startActivity(intent);
     }
-
-    public void onCustomerRegisterClick(View view) {
-        Intent intent  = new Intent(LoginActivity01.this, CustomerEnrollment02.class);
-        startActivity(intent);
-    }
 }

@@ -14,61 +14,52 @@
             android:label="Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".CustomerEnrollment02"
-            android:label="Cadastro de Cliente" />
-
+            android:label="Cadastro/Edição de Cliente" />
         <activity
             android:name=".MenuActivity031"
             android:label="Menu Cliente" />
-
         <activity
             android:name=".MenuActivity032"
             android:label="Menu Funcionário" />
-
         <activity
             android:name=".ProductEnrollment042"
-            android:label="Cadastro/Edição de Produto"/>
-
+            android:label="Cadastro/Edição de Produto" />
         <activity
             android:name=".ProductCategoryEnrollment052"
-            android:label="Cadastro/Edição de Categoria de Produto"/>
-
+            android:label="Cadastro/Edição de Categoria de Produto" />
         <activity
             android:name=".Payment10"
-            android:label="Pagamento"/>
-
+            android:label="Pagamento" />
         <activity
             android:name=".FinishShopping11"
-            android:label="Finalização de Compra"/>
-
+            android:label="Finalização de Compra" />
         <activity
             android:name=".ProductManagementActivity"
-            android:label="Gerenciamento de Produtos"/>
-
+            android:label="Gerenciamento de Produtos" />
         <activity
             android:name=".ProductCategoryManagementActivity"
-            android:label="Gerenciamento de Categoria de Produtos"/>
-
+            android:label="Gerenciamento de Categoria de Produtos" />
         <activity
             android:name=".OrdersReportActivity"
-            android:label="Relatório de Pedidos"/>
-
+            android:label="Relatório de Pedidos" />
         <activity
             android:name=".StockChangeEntriesReportActivity"
-            android:label="Relatório de Movimentação de Estoque"/>
-
+            android:label="Relatório de Movimentação de Estoque" />
         <activity
             android:name=".ProductSearchActivity"
-            android:label="Busca de Produto"/>
-
+            android:label="Busca de Produto" />
         <activity
             android:name=".CartActivity"
-            android:label="Carrinho"/>
+            android:label="Carrinho" />
+        <activity
+            android:name=".CustomerManagementActivity"
+            android:label="Gerenciamento de Clientes"/>
     </application>
 
 </manifest>

@@ -42,13 +42,4 @@
         android:onClick="onLoginClick"
         android:text="Entrar"/>
 
-    <TextView
-        android:id="@+id/txtEnroll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Realizar cadastro"
-        android:textAlignment="center"
-        android:layout_marginTop="30dp"
-        android:onClick="onCustomerRegisterClick"/>
-
 </LinearLayout>
