@@ -16,13 +16,12 @@
     <data key="d0"/>
     <node id="n0">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:SVGNode>
           <y:Geometry height="100.0" width="60.0" x="249.0" y="178.74999999999997"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.94384765625" x="4.028076171875" y="104.0">Usuário<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.94384765625" x="4.028076171875" y="104.00000000000003">Usuário<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -38,7 +37,6 @@
     </node>
     <node id="n1">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:SVGNode>
           <y:Geometry height="100.0" width="60.0" x="387.9375" y="286.5625"/>
@@ -60,7 +58,6 @@
     </node>
     <node id="n2">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:SVGNode>
           <y:Geometry height="100.0" width="60.0" x="117.62500000000011" y="286.5625"/>
@@ -82,14 +79,12 @@
     </node>
     <node id="n3">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="71.875" width="177.18749999999997" x="-97.98325000000003" y="-56.9846500000004"/>
+          <y:Geometry height="71.875" width="177.18749999999997" x="-249.54574999999997" y="348.0153499999996"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="34.62109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.76953125" x="24.208984374999986" y="18.626953125">Realiza Cadastro de
-Usuário<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.88134765625" x="32.153076171874986" y="26.2822265625">Cadastrar Cliente<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -102,7 +97,6 @@ Usuário<y:LabelModel>
     </node>
     <node id="n4">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="62.5" width="164.6875" x="196.65625" y="-56.9846500000004"/>
@@ -121,7 +115,6 @@ Usuário<y:LabelModel>
     </node>
     <node id="n5">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="150.62499999999997" x="-160.48325" y="467.70284999999956"/>
@@ -140,13 +133,12 @@ Usuário<y:LabelModel>
     </node>
     <node id="n6">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="67.1875" width="150.62499999999997" x="-249.54574999999997" y="596.0147999999988"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.54345703125" x="16.040771484375" y="23.9384765625">Cadastrar Produto<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.54345703125" x="16.04077148437497" y="23.9384765625">Cadastrar Produto<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -159,7 +151,6 @@ Usuário<y:LabelModel>
     </node>
     <node id="n7">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="62.5" width="164.68750000000003" x="-67.51450000000001" y="600.7022999999988"/>
@@ -179,7 +170,6 @@ Usuário<y:LabelModel>
     </node>
     <node id="n8">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="189.6875" x="323.09375" y="467.70284999999956"/>
@@ -198,7 +188,6 @@ Usuário<y:LabelModel>
     </node>
     <node id="n9">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="189.6875" x="209.15625" y="596.0147999999988"/>
@@ -218,7 +207,6 @@ Pedidos<y:LabelModel>
     </node>
     <node id="n10">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="189.6875" x="469.9854999999999" y="596.0147999999988"/>
@@ -238,7 +226,6 @@ Movimentação de Estoque<y:LabelModel>
     </node>
     <node id="n11">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="64.0625" width="140.51675" x="431.27491666666657" y="88.23465000000039"/>
@@ -257,13 +244,12 @@ Movimentação de Estoque<y:LabelModel>
     </node>
     <node id="n12">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="67.1875" width="150.62499999999997" x="489.08741666666674" y="-74.17215000000039"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="34.62109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.8564453125" x="6.884277343749986" y="16.283203125">Adicionar Produto ao
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="34.62109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.8564453125" x="6.88427734375" y="16.283203125">Adicionar Produto ao
 Carrinho<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -277,7 +263,6 @@ Carrinho<y:LabelModel>
     </node>
     <node id="n13">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="75.0" width="164.6875" x="753.5625" y="444.2653499999995"/>
@@ -297,7 +282,6 @@ Produto no Carrinho<y:LabelModel>
     </node>
     <node id="n14">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="177.1875" x="747.3125" y="300.625"/>
@@ -317,7 +301,6 @@ Carrinho<y:LabelModel>
     </node>
     <node id="n15">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="140.51675" x="532.0081666666666" y="206.87499999999997"/>
@@ -336,7 +319,6 @@ Carrinho<y:LabelModel>
     </node>
     <node id="n16">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="75.0" width="140.51675" x="760.9624166666665" y="144.57784999999964"/>
@@ -355,13 +337,12 @@ Carrinho<y:LabelModel>
     </node>
     <node id="n17">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.875" width="153.75" x="989.9166666666664" y="146.14034999999964"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.3515625" x="21.19921875" y="26.2822265625">Finalizar Compra<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.3515625" x="21.199218750000114" y="26.2822265625">Finalizar Compra<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -373,7 +354,6 @@ Carrinho<y:LabelModel>
       </data>
     </node>
     <node id="n18">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="23.75" width="84.8605" x="261.56975" y="555.9213249999991"/>
@@ -391,7 +371,6 @@ Carrinho<y:LabelModel>
       </data>
     </node>
     <node id="n19">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="23.75" width="84.8605" x="-216.6635" y="555.9213249999991"/>
@@ -409,7 +388,6 @@ Carrinho<y:LabelModel>
       </data>
     </node>
     <node id="n20">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="23.75" width="84.8605" x="-27.601" y="555.9213249999991"/>
@@ -427,7 +405,6 @@ Carrinho<y:LabelModel>
       </data>
     </node>
     <node id="n21">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="23.75" width="84.8605" x="512.78125" y="555.9213249999991"/>
@@ -444,8 +421,24 @@ Carrinho<y:LabelModel>
         </y:ShapeNode>
       </data>
     </node>
+    <node id="n22">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="23.75" width="84.8605" x="-226.327" y="431.92159999999956"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.373046875" x="0.2437265625000009" y="2.80859375">&lt;&lt;include&gt;&gt;<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
     <edge id="e0" source="n2" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -456,7 +449,6 @@ Carrinho<y:LabelModel>
       </data>
     </edge>
     <edge id="e1" source="n1" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -467,7 +459,6 @@ Carrinho<y:LabelModel>
       </data>
     </edge>
     <edge id="e2" source="n2" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -478,7 +469,6 @@ Carrinho<y:LabelModel>
       </data>
     </edge>
     <edge id="e3" source="n0" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -488,8 +478,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e4" source="n0" target="n3">
-      <data key="d9"/>
+    <edge id="e4" source="n2" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -499,8 +488,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n2" target="n8">
-      <data key="d9"/>
+    <edge id="e5" source="n6" target="n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -510,8 +498,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n6" target="n5">
-      <data key="d9"/>
+    <edge id="e6" source="n7" target="n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -521,8 +508,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e7" source="n7" target="n5">
-      <data key="d9"/>
+    <edge id="e7" source="n9" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -532,8 +518,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n9" target="n8">
-      <data key="d9"/>
+    <edge id="e8" source="n10" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -543,8 +528,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e9" source="n10" target="n8">
-      <data key="d9"/>
+    <edge id="e9" source="n1" target="n11">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -554,8 +538,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e10" source="n1" target="n11">
-      <data key="d9"/>
+    <edge id="e10" source="n11" target="n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -565,8 +548,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e11" source="n11" target="n12">
-      <data key="d9"/>
+    <edge id="e11" source="n1" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -576,8 +558,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n1" target="n15">
-      <data key="d9"/>
+    <edge id="e12" source="n15" target="n16">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -587,8 +568,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n15" target="n16">
-      <data key="d9"/>
+    <edge id="e13" source="n16" target="n17">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -598,8 +578,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n16" target="n17">
-      <data key="d9"/>
+    <edge id="e14" source="n1" target="n13">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -609,8 +588,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n1" target="n13">
-      <data key="d9"/>
+    <edge id="e15" source="n1" target="n14">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -620,7 +598,7 @@ Carrinho<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e16" source="n1" target="n14">
+    <edge id="e16" source="n3" target="n5">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
