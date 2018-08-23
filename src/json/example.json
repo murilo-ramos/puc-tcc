@@ -1,0 +1,15 @@
+{
+  "login": "funcionario",
+  "password": "1234"
+}
+
+{
+	"cpf": "12312312312",
+	"name": "Ronaldo",
+	"address": "Rua 01",
+	"state": "SP",
+	"city": "Catuçaba",
+	"phone": "123321",
+	"email": "ronaldo@ronaldo.com"
+	"password": "1234"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeMenuActivity"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <Button
+        android:id="@+id/employeeMenuCustomerEnrollmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Cliente"/>
+
+    <Button
+        android:id="@+id/employeeMenuProductEnrollmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Produto"/>
+
+    <Button
+        android:id="@+id/employeeMenuProductCategoryEnrollmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Categoria de Produto"/>
+
+    <Button
+        android:id="@+id/employeeMenuOrderReportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatório de Pedidos"/>
+
+    <Button
+        android:id="@+id/employeeMenuStockReportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relatório de Estoque"/>
+
+
+</LinearLayout>
