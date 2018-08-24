@@ -13,9 +13,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <!-- Remover -->
-        <activity android:name=".MainActivity"/>
-
         <activity android:name=".LoginActivity"
                   android:label="Login">
             <intent-filter>

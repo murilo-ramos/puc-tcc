@@ -6,7 +6,9 @@ import br.com.murilo.ecommercepucapp.entity.Customer;
 import br.com.murilo.ecommercepucapp.service.model.RequestResult;
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.HTTP;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
@@ -25,7 +27,8 @@ public interface CustomerClient {
     @PUT("customer")
     Call<RequestResult<Customer>> update(@Body Customer customer);
 
-    @POST("customer")
+    //@DELETE("customer")
+    @HTTP(method = "DELETE", path = "customer", hasBody = true)
     Call<RequestResult<Customer>> remove(@Body Customer customer);
 
 }

@@ -41,6 +41,12 @@ public class CustomerEnrollmentUpdateActivity extends AppCompatActivity {
         this.initialize();
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, CustomerManagementActivity.class);
+        this.startActivity(intent);
+    }
+
     private void initialize() {
         this.cpfEditText = findViewById(R.id.cpfEditText);
         this.nameEditText = findViewById(R.id.nameEditText);
@@ -109,7 +115,7 @@ public class CustomerEnrollmentUpdateActivity extends AppCompatActivity {
         requestResult.enqueue(new Callback<RequestResult<Customer>>() {
             @Override
             public void onResponse(Call<RequestResult<Customer>> call, Response<RequestResult<Customer>> response) {
-                RequestResult result = response.body();
+                RequestResult<Customer> result = response.body();
 
                 if (!result.isRequestSuccessful()) {
                     MessageUtil.showLongToast(CustomerEnrollmentUpdateActivity.this, result.getMessage());
@@ -141,6 +147,11 @@ public class CustomerEnrollmentUpdateActivity extends AppCompatActivity {
 
     private void backToCustomerManagement() {
         Intent intent = new Intent(this, CustomerManagementActivity.class);
+
+        if (this.isUpdate) {
+            intent.putExtra(CustomerManagementActivity.REFRESH_SEARCH_ID, true);
+        }
+
         this.startActivity(intent);
     }
 }

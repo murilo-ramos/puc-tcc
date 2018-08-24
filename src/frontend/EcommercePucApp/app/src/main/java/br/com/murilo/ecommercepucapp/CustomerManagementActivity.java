@@ -1,6 +1,8 @@
 package br.com.murilo.ecommercepucapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +24,7 @@ import retrofit2.Response;
 
 public class CustomerManagementActivity extends AppCompatActivity {
 
+    public static final String REFRESH_SEARCH_ID = "REFRESH_SEARCH_ID";
     private static final Logger LOGGER = Logger.create(CustomerManagementActivity.class);
 
     private Button newCustomerButton;
@@ -34,6 +37,34 @@ public class CustomerManagementActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_customer_management);
         this.initialize();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, EmployeeMenuActivity.class);
+        this.startActivity(intent);
+    }
+
+    public void editCustomer(Customer customer) {
+        this.showUpdateScreen(customer);
+    }
+
+    public void deleteCustomer(final Customer customer) {
+        AlertDialog removeDialog = new AlertDialog.Builder(this)
+                .setTitle("Remover")
+                .setMessage("Deseja mesmo remover o cliente?")
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        performCustomerDelete(customer);
+                        dialog.dismiss();
+                    }
+                }).setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).create();
+
+        removeDialog.show();
     }
 
     private void initialize() {
@@ -55,13 +86,15 @@ public class CustomerManagementActivity extends AppCompatActivity {
                 onCustomerSearchClick(view);
             }
         });
+
+        Bundle bundle = getIntent().getExtras();
+
+        if (bundle != null && bundle.containsKey(REFRESH_SEARCH_ID)) {
+            performCustomerSearch();
+        }
     }
 
-    public void editCustomer(Customer customer) {
-        this.showUpdateScreen(customer);
-    }
-
-    public void deleteCustomer(Customer customer) {
+    private void performCustomerDelete(Customer customer) {
         ClientFactory clientFactory = ClientFactory.getInstance();
         CustomerClient customerClient = clientFactory.createCustomerClient();
 
@@ -74,7 +107,7 @@ public class CustomerManagementActivity extends AppCompatActivity {
 
                 if (result.isRequestSuccessful()) {
                     MessageUtil.showLongToast(CustomerManagementActivity.this, "Cliente removido com sucesso!");
-                    performCustomerSeach();
+                    performCustomerSearch();
                 } else {
                     MessageUtil.showLongToast(CustomerManagementActivity.this, result.getMessage());
                 }
@@ -93,10 +126,10 @@ public class CustomerManagementActivity extends AppCompatActivity {
     }
 
     private void onCustomerSearchClick(View view) {
-        this.performCustomerSeach();
+        this.performCustomerSearch();
     }
 
-    private void performCustomerSeach() {
+    private void performCustomerSearch() {
         String name = this.customerNameSearchEditText.getText().toString();
 
         ClientFactory clientFactory = ClientFactory.getInstance();

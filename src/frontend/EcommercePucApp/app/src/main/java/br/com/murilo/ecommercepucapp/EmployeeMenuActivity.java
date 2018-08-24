@@ -22,6 +22,12 @@ public class EmployeeMenuActivity extends AppCompatActivity {
         this.initialize();
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        this.startActivity(intent);
+    }
+
     private void initialize() {
         this.customerManagementButton = findViewById(R.id.employeeMenuCustomerEnrollmentButton);
         this.productManagementButton = findViewById(R.id.employeeMenuProductEnrollmentButton);
