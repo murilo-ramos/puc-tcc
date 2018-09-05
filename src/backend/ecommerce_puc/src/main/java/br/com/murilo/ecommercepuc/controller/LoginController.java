@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.murilo.ecommercepuc.configuration.I18nProvider;
+import br.com.murilo.ecommercepuc.configuration.LoginI18n;
 import br.com.murilo.ecommercepuc.model.Login;
 import br.com.murilo.ecommercepuc.model.LoginResult;
 import br.com.murilo.ecommercepuc.service.LoginService;
@@ -29,12 +30,12 @@ public class LoginController {
 		LoginResult result = new LoginResult();
 		
 		if (login.getLogin().trim().isEmpty()) {
-			result.setMessage(i18nProvider.get("login.message.loginCannotBeEmpty"));
+			result.setMessage(i18nProvider.get(LoginI18n.LOGIN_CANNOT_BE_EMPTY));
 			return result;
 		}
 		
 		if (login.getPassword().trim().isEmpty()) {
-			result.setMessage(i18nProvider.get("login.message.passwordCannotBeEmpty"));			
+			result.setMessage(i18nProvider.get(LoginI18n.PASSWORD_CANNOT_BE_EMPTY));			
 			return result;
 		}
 		
@@ -42,7 +43,7 @@ public class LoginController {
 			return this.loginService.login(login);
 		} catch (Exception ex) {
 			LOGGER.error(ex.getMessage());
-			result.setMessage(i18nProvider.get("login.message.errorWhenProcessingRequest"));
+			result.setMessage(i18nProvider.get(LoginI18n.ERROR_WHEN_PROCESSING_REQUEST));
 			return result;
 		}
 	}

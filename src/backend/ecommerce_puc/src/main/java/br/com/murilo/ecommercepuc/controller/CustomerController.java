@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.murilo.ecommercepuc.configuration.CustomerI18n;
 import br.com.murilo.ecommercepuc.configuration.I18nProvider;
 import br.com.murilo.ecommercepuc.entity.Customer;
 import br.com.murilo.ecommercepuc.model.RequestResult;
@@ -50,13 +51,13 @@ public class CustomerController {
 			this.customerService.add(customer);
 			result.setRequestSuccessful(true);
 			result.setEntity(customer);
-			result.setMessage(i18nProvider.get("customer.message.customerEnrolledWithSuccess"));
+			result.setMessage(i18nProvider.get(CustomerI18n.ENROLLED_WITH_SUCCESS));
 		} catch (CustomerServiceException ex) {
 			LOGGER.error(ex.getMessage());
 			result.setMessage(ex.getMessage());
 		} catch (Exception ex) {
 			LOGGER.error(ex.getMessage());
-			result.setMessage(i18nProvider.get("customer.message.errorWhenProcessingCustomerEnrollment"));
+			result.setMessage(i18nProvider.get(CustomerI18n.ERROR_WHEN_PROCESSING_CUSTOMER_ENROLLMENT));
 		}
 		
 		return result;
@@ -74,13 +75,13 @@ public class CustomerController {
 			this.customerService.update(customer);
 			result.setRequestSuccessful(true);
 			result.setEntity(customer);
-			result.setMessage(i18nProvider.get("customer.message.customerUpdatedWithSuccess"));
+			result.setMessage(i18nProvider.get(CustomerI18n.UPDATED_WITH_SUCESS));
 		} catch (CustomerServiceException ex) {
 			LOGGER.error(ex.getMessage());
 			result.setMessage(ex.getMessage());
 		} catch (Exception ex) {
 			LOGGER.error(ex.getMessage());
-			result.setMessage(i18nProvider.get("customer.message.errorWhenProcessingCustomerUpdate"));
+			result.setMessage(i18nProvider.get(CustomerI18n.ERROR_WHEN_PROCESSING_CUSTOMER_UPDATE));
 		}
 		
 		return result;
@@ -91,7 +92,7 @@ public class CustomerController {
 		RequestResult<Customer> result = new RequestResult<>();
 		
 		if (customer.getCpf().trim().isEmpty()) {
-			result.setMessage(i18nProvider.get("customer.message.customerCpfCannotBeEmpty"));
+			result.setMessage(i18nProvider.get(CustomerI18n.CPF_CANNOT_BE_EMPTY));
 			return result;
 		}
 		
@@ -99,13 +100,13 @@ public class CustomerController {
 			this.customerService.delete(customer);
 			result.setRequestSuccessful(true);
 			result.setEntity(customer);
-			result.setMessage(i18nProvider.get("customer.message.customerDeletedWithSuccess"));
+			result.setMessage(i18nProvider.get(CustomerI18n.DELETED_WITH_SUCCESS));
 		} catch (CustomerServiceException ex) {
 			LOGGER.error(ex.getMessage());
 			result.setMessage(ex.getMessage());
 		} catch (Exception ex) {
 			LOGGER.error(ex.getMessage());
-			result.setMessage(i18nProvider.get("customer.message.errorWhenProcessingCustomerDelete"));
+			result.setMessage(i18nProvider.get(CustomerI18n.ERROR_WHEN_PROCESSING_CUSTOMER_DELETE));
 		}
 		
 		return result;
@@ -113,22 +114,22 @@ public class CustomerController {
 	
 	private boolean checkCustomerFields(Customer customer, RequestResult<Customer> result) {
 		if (customer.getCpf().trim().isEmpty()) {
-			result.setMessage(i18nProvider.get("customer.message.customerCpfCannotBeEmpty"));
+			result.setMessage(i18nProvider.get(CustomerI18n.CPF_CANNOT_BE_EMPTY));
 			return false;
 		}
 		
 		if (customer.getName().trim().isEmpty()) {
-			result.setMessage(i18nProvider.get("customer.message.customerNameCannotBeEmpty"));
+			result.setMessage(i18nProvider.get(CustomerI18n.NAME_CANNOT_BE_EMPTY));
 			return false;
 		}
 		
 		if (customer.getEmail().trim().isEmpty()) {			
-			result.setMessage(i18nProvider.get("customer.message.customerEmailCannotBeEmpty"));
+			result.setMessage(i18nProvider.get(CustomerI18n.EMAIL_CANNOT_BE_EMPTY));
 			return false;
 		}
 		
 		if (customer.getPassword().trim().isEmpty()) {
-			result.setMessage(i18nProvider.get("customer.message.customerPasswordCannotBeEmpty"));
+			result.setMessage(i18nProvider.get(CustomerI18n.PASSWORD_CANNOT_BE_EMPTY));
 			return false;
 		}
 		

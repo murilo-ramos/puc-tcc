@@ -11,6 +11,14 @@ public class I18nProvider {
 	@Autowired
 	private MessageSource messageSource;
 	
+	public String get(ItemI18n item) {
+		return this.get(item.getKey());
+	}
+	
+	public String get(ItemI18n item, String...params) {
+		return this.get(item.getKey(), params);
+	}
+	
 	public String get(String key) {
 		return this.messageSource.getMessage(key, null, LocaleContextHolder.getLocale());
 	}
