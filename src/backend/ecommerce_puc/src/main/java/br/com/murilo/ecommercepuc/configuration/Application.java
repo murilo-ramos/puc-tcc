@@ -8,6 +8,11 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+/**
+ * Classe responsável por configurar o framework Springboot
+ * @author murilocosta
+ */
+
 @SpringBootApplication
 @ComponentScan(basePackages = {"br.com.murilo.ecommercepuc"})
 @EntityScan("br.com.murilo.ecommercepuc.entity")

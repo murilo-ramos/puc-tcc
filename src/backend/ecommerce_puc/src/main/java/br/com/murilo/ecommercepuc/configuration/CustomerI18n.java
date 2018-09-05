@@ -1,5 +1,10 @@
 package br.com.murilo.ecommercepuc.configuration;
 
+/**
+ * Enum contendo as chaves de internacionalização para rótulos de cliente
+ * @author murilocosta
+ */
+
 public enum CustomerI18n implements ItemI18n {
 	CPF_CANNOT_BE_EMPTY("customer.message.customerCpfCannotBeEmpty"),
 	NAME_CANNOT_BE_EMPTY("customer.message.customerNameCannotBeEmpty"),

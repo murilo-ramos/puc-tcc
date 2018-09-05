@@ -1,5 +1,9 @@
 package br.com.murilo.ecommercepuc.configuration;
 
+/**
+ * Enum contendo as chaves de internacionalização para rótulos de login
+ * @author murilocosta
+ */
 public enum LoginI18n implements ItemI18n {
 	LOGIN_CANNOT_BE_EMPTY("login.message.loginCannotBeEmpty"),
 	PASSWORD_CANNOT_BE_EMPTY("login.message.passwordCannotBeEmpty"),

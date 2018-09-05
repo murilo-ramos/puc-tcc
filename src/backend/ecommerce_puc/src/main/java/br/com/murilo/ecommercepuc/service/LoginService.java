@@ -15,6 +15,10 @@ import br.com.murilo.ecommercepuc.model.LoginResult;
 import br.com.murilo.ecommercepuc.repository.CustomerRepository;
 import br.com.murilo.ecommercepuc.repository.EmployeeRepository;
 
+/**
+ * Classe de serviço contendo métodos com lógica de negócio do login
+ * @author murilocosta
+ */
 @Service
 public class LoginService {
 	

@@ -1,5 +1,9 @@
 package br.com.murilo.ecommercepuc.entity;
 
+/**
+ * Entidade de funcionário
+ * @author murilocosta
+ */
 public class Employee implements User {
 
 	private final String login;

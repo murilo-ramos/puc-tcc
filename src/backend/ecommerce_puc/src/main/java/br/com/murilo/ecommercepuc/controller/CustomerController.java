@@ -18,6 +18,10 @@ import br.com.murilo.ecommercepuc.model.RequestResult;
 import br.com.murilo.ecommercepuc.service.CustomerService;
 import br.com.murilo.ecommercepuc.service.CustomerServiceException;
 
+/**
+ * Controlador responsável por operações relacionadas ao cliente
+ * @author murilocosta
+ */
 @RestController
 public class CustomerController {
 	

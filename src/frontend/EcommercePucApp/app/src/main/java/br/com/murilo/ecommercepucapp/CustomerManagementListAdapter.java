@@ -12,6 +12,10 @@ import java.util.List;
 
 import br.com.murilo.ecommercepucapp.entity.Customer;
 
+/**
+ * Classe utilizada como adaptador para exibir lista de clientes na tela de gerenciamento de cliente
+ * @author murilocosta
+ */
 public class CustomerManagementListAdapter extends BaseAdapter {
 
     private final CustomerManagementActivity customerManagementActivity;

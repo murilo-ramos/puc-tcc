@@ -5,6 +5,11 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
 
+/**
+ * Classe reponsável por invocar os textos de internacionalização
+ * @author murilocosta
+ */
+
 @Component
 public class I18nProvider {
 	

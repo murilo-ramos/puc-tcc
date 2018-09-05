@@ -11,6 +11,10 @@ import br.com.murilo.ecommercepuc.configuration.I18nProvider;
 import br.com.murilo.ecommercepuc.entity.Customer;
 import br.com.murilo.ecommercepuc.repository.CustomerRepository;
 
+/**
+ * Classe de serviço contendo métodos com lógica de negócio do cliente
+ * @author murilocosta
+ */
 @Service
 public class CustomerService {
 

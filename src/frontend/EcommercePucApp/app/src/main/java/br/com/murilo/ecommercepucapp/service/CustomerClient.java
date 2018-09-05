@@ -13,6 +13,11 @@ import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
+/**
+ * Interface representando o cliente de acesso aos serviços de cliente
+ * A interface tem sua implementação criando em tempo de execução pela API Retrofit
+ * @author murilocosta
+ */
 public interface CustomerClient {
 
     @GET("customer")

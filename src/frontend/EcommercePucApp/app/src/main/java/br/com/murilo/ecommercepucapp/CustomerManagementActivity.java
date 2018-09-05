@@ -22,6 +22,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Activity responsável por controlar as operações na tela de gerenciamento de cliente
+ * @author murilocosta
+ */
 public class CustomerManagementActivity extends AppCompatActivity {
 
     public static final String REFRESH_SEARCH_ID = "REFRESH_SEARCH_ID";

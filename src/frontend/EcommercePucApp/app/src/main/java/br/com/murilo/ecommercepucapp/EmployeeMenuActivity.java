@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+/**
+ * Activity responsável pelas operações da tela de menu de funcionário
+ * @author murilocosta
+ */
 public class EmployeeMenuActivity extends AppCompatActivity {
 
     private Button customerManagementButton;

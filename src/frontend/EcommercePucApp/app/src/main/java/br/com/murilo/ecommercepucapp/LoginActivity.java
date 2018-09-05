@@ -18,6 +18,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Activity responsável pelas operações da tela de login
+ * @author murilocosta
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private static final Logger LOGGER = Logger.create(LoginActivity.class);

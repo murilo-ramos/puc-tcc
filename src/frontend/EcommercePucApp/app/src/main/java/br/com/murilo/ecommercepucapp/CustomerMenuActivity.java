@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+/**
+ * Activity responsável pelas operações da tela de menu de cliente
+ * @author murilocosta
+ */
 public class CustomerMenuActivity extends AppCompatActivity {
 
     private Button productSearchButton;

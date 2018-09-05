@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
 
+/**
+ * Entidade de cliente
+ * @author murilocosta
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Customer implements Serializable {
 

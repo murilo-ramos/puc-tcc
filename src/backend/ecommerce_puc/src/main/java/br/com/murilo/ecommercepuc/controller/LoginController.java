@@ -14,6 +14,10 @@ import br.com.murilo.ecommercepuc.model.Login;
 import br.com.murilo.ecommercepuc.model.LoginResult;
 import br.com.murilo.ecommercepuc.service.LoginService;
 
+/**
+ * Controlador responsável por operações relacionadas a login
+ * @author murilocosta
+ */
 @RestController
 public class LoginController {
 	
