@@ -3,6 +3,10 @@ package br.com.murilo.ecommercepucapp.application;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
+/**
+ * CLasse utilitária de log da aplicação
+ * @author murilocosta
+ */
 public class Logger {
 
     private static final String APPLICATION_TAG = "ECOMMERCE_PUC";

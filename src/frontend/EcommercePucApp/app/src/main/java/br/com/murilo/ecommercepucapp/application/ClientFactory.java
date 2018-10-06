@@ -5,6 +5,11 @@ import br.com.murilo.ecommercepucapp.service.LoginClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
+/**
+ * Factory utilizada para criar os clientes para acesso aos serviços de cliente e login
+ * Os clientes utilizam a API Retrofit para implementação do acesso
+ * @author murilocosta
+ */
 public class ClientFactory {
 
     private static ClientFactory instance;

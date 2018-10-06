@@ -4,6 +4,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/**
+ * Entidade de Cliente
+ * @author murilocosta
+ */
 @Entity
 public class Customer implements User {
 	

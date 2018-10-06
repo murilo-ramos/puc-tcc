@@ -24,7 +24,7 @@
   <class id="3" language="java" name="br.com.murilo.ecommercepuc.controller.CustomerController" project="ecommerce-puc" 
     file="/ecommerce-puc/src/main/java/br/com/murilo/ecommercepuc/controller/CustomerController.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="163" y="463"/>    
+    <position height="-1" width="-1" x="-119" y="459"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -122,7 +122,7 @@
   <class id="13" language="java" name="br.com.murilo.ecommercepuc.model.RequestResult" project="ecommerce-puc" 
     file="/ecommerce-puc/src/main/java/br/com/murilo/ecommercepuc/model/RequestResult.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="165" y="794"/>    
+    <position height="-1" width="-1" x="-123" y="834"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -176,7 +176,7 @@
     project="ecommerce-puc" 
     file="/ecommerce-puc/src/main/java/br/com/murilo/ecommercepuc/service/CustomerServiceException.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="101" width="244" x="-359" y="256"/>    
+    <position height="101" width="244" x="-327" y="54"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -193,50 +193,69 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="20">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <association id="21">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="22" name="user">        
-        <position height="0" width="0" x="1060" y="571"/>      
+  <interface id="20" language="java" name="br.com.murilo.ecommercepuc.configuration.ItemI18n" project="ecommerce-puc" 
+    file="/ecommerce-puc/src/main/java/br/com/murilo/ecommercepuc/configuration/ItemI18n.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="277" y="670"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="21" language="java" name="br.com.murilo.ecommercepuc.configuration.CustomerI18n" 
+    project="ecommerce-puc" 
+    file="/ecommerce-puc/src/main/java/br/com/murilo/ecommercepuc/configuration/CustomerI18n.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="361" width="292" x="2" y="772"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="22" language="java" name="br.com.murilo.ecommercepuc.configuration.LoginI18n" project="ecommerce-puc" 
+    file="/ecommerce-puc/src/main/java/br/com/murilo/ecommercepuc/configuration/LoginI18n.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="519" y="999"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <association id="23">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="24" name="i18nProvider">        
+        <position height="19" width="76" x="683" y="384"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="1">        
-        <position height="0" width="0" x="1060" y="571"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="24">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <realization id="25">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="16"/>  
-  </realization>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <association id="27">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="28" name="i18nProvider">        
-        <position height="0" width="0" x="323" y="232"/>      
-      </attribute>      
-      <multiplicity id="29" minimum="0" maximum="1">        
+      <multiplicity id="25" minimum="0" maximum="1">        
         <position height="0" width="0" x="323" y="232"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="30">    
+  <dependency id="26">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="27">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="18"/>  
   </dependency>  
+  <association id="28">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="29" name="i18nProvider">        
+        <position height="0" width="0" x="323" y="232"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="323" y="232"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="31">    
     <end type="SOURCE" refId="17" navigable="false">      
       <attribute id="32" name="customerRepository">        
@@ -261,106 +280,130 @@
     <end type="TARGET" refId="17" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="37">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <association id="38">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="39" name="loginService">        
-        <position height="0" width="0" x="422" y="403"/>      
-      </attribute>      
-      <multiplicity id="40" minimum="0" maximum="1">        
-        <position height="0" width="0" x="422" y="403"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="41">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="42" name="i18nProvider">        
-        <position height="19" width="76" x="540" y="343"/>      
-      </attribute>      
-      <multiplicity id="43" minimum="0" maximum="1">        
-        <position height="0" width="0" x="323" y="232"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="44">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="13"/>  
-  </dependency>  
-  <realization id="45">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </realization>  
-  <dependency id="46">    
-    <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="47">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="18"/>  
-  </dependency>  
-  <dependency id="48">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <association id="49">    
+  <association id="37">    
     <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="50" name="employeeRepository">        
+      <attribute id="38" name="employeeRepository">        
         <position height="0" width="0" x="-191" y="372"/>      
       </attribute>      
-      <multiplicity id="51" minimum="0" maximum="1">        
+      <multiplicity id="39" minimum="0" maximum="1">        
         <position height="0" width="0" x="-191" y="372"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="52">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="53" name="i18nProvider">        
-        <position height="19" width="76" x="445" y="343"/>      
+  <dependency id="40">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="41">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="42">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="43" name="user">        
+        <position height="0" width="0" x="1060" y="571"/>      
       </attribute>      
-      <multiplicity id="54" minimum="0" maximum="1">        
+      <multiplicity id="44" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1060" y="571"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="45">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="46">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="47" name="i18nProvider">        
+        <position height="19" width="76" x="540" y="343"/>      
+      </attribute>      
+      <multiplicity id="48" minimum="0" maximum="1">        
         <position height="0" width="0" x="323" y="232"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="55">    
+  <association id="49">    
     <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="56" name="customerRepository">        
+      <attribute id="50" name="customerRepository">        
         <position height="0" width="0" x="357" y="62"/>      
       </attribute>      
-      <multiplicity id="57" minimum="0" maximum="1">        
+      <multiplicity id="51" minimum="0" maximum="1">        
         <position height="0" width="0" x="357" y="62"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="58">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="59" name="i18nProvider">        
-        <position height="19" width="76" x="683" y="384"/>      
+  <realization id="52">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <dependency id="53">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <nesting id="54">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <dependency id="55">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="56">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="57">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="58">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="59">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="60" name="loginService">        
+        <position height="0" width="0" x="422" y="403"/>      
       </attribute>      
-      <multiplicity id="60" minimum="0" maximum="1">        
+      <multiplicity id="61" minimum="0" maximum="1">        
+        <position height="0" width="0" x="422" y="403"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="62">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <dependency id="63">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <realization id="64">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <association id="65">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="66" name="i18nProvider">        
+        <position height="19" width="76" x="445" y="343"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
         <position height="0" width="0" x="323" y="232"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <nesting id="61">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </nesting>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

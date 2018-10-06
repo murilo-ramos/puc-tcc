@@ -8,6 +8,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import br.com.murilo.ecommercepuc.entity.Customer;
 
+/**
+ * Interface representando o repositório de dados referentes ao cliente
+ * Implementação é feita em tempo de execução pelo Spring
+ * @author murilocosta
+ */
 public interface CustomerRepository extends JpaRepository<Customer, String> {
 	
 	@Query("SELECT t FROM Customer t WHERE t.email = ?1")

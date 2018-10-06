@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.murilo.ecommercepuc.configuration.I18nProvider;
+import br.com.murilo.ecommercepuc.configuration.LoginI18n;
 import br.com.murilo.ecommercepuc.entity.Customer;
 import br.com.murilo.ecommercepuc.entity.Employee;
 import br.com.murilo.ecommercepuc.entity.User;
@@ -14,6 +15,10 @@ import br.com.murilo.ecommercepuc.model.LoginResult;
 import br.com.murilo.ecommercepuc.repository.CustomerRepository;
 import br.com.murilo.ecommercepuc.repository.EmployeeRepository;
 
+/**
+ * Classe de serviço contendo métodos com lógica de negócio do login
+ * @author murilocosta
+ */
 @Service
 public class LoginService {
 	
@@ -46,7 +51,7 @@ public class LoginService {
 		}
 		
 		result.setLoginSuccessful(false);
-		result.setMessage(i18nProvider.get("login.message.invalidLoginAndPassword"));
+		result.setMessage(i18nProvider.get(LoginI18n.INVALID_LOGIN_AND_PASSWORD));
 		
 		return result;
 	}

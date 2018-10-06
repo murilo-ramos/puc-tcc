@@ -2,6 +2,10 @@ package br.com.murilo.ecommercepucapp.application;
 
 import br.com.murilo.ecommercepucapp.entity.User;
 
+/**
+ * Singleton utilizado para armazenar dados de autenticação e login
+ * @author murilocosta
+ */
 public class AuthenticationData {
 
     private static AuthenticationData instance;

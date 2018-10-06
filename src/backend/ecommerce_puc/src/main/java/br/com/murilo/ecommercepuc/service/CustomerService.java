@@ -6,10 +6,15 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.murilo.ecommercepuc.configuration.CustomerI18n;
 import br.com.murilo.ecommercepuc.configuration.I18nProvider;
 import br.com.murilo.ecommercepuc.entity.Customer;
 import br.com.murilo.ecommercepuc.repository.CustomerRepository;
 
+/**
+ * Classe de serviço contendo métodos com lógica de negócio do cliente
+ * @author murilocosta
+ */
 @Service
 public class CustomerService {
 
@@ -48,7 +53,7 @@ public class CustomerService {
 			Optional<Customer> customerEntry =  this.customerRepository.findById(customer.getCpf());
 			
 			if (customerEntry.isPresent()) {
-				throw new CustomerServiceException(i18nProvider.get("customer.message.cpfAlreadyExists"));
+				throw new CustomerServiceException(i18nProvider.get(CustomerI18n.CPF_ALREADY_EXISTS));
 			}
 		}
 		
@@ -59,7 +64,7 @@ public class CustomerService {
 				return;
 			}
 			
-			throw new CustomerServiceException(i18nProvider.get("customer.message.emailAlreadyExists"));
+			throw new CustomerServiceException(i18nProvider.get(CustomerI18n.EMAIL_ALREADY_EXISTS));
 		}
 	}
 	
@@ -67,7 +72,7 @@ public class CustomerService {
 		Optional<Customer> customerEntry =  this.customerRepository.findById(customer.getCpf());
 		
 		if (!customerEntry.isPresent()) {			
-			throw new CustomerServiceException(i18nProvider.get("customer.message.customerWithCpfNotExists", customer.getCpf()));
+			throw new CustomerServiceException(i18nProvider.get(CustomerI18n.CUSTOMER_WITH_CPF_NOT_EXISTS, customer.getCpf()));
 		}
 	}
 }

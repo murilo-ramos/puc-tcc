@@ -17,6 +17,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Activity responsável por operações na tela de cadastro/edição de cliente
+ * @author murilocosta
+ */
 public class CustomerEnrollmentUpdateActivity extends AppCompatActivity {
 
     public static final String CUSTOMER_OBJECT_ID = "CUSTOMER_OBJECT_ID";

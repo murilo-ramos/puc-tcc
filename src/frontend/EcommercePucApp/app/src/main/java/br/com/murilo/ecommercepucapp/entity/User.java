@@ -3,6 +3,10 @@ package br.com.murilo.ecommercepucapp.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * Entidade de usuário
+ * @author murilocosta
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 

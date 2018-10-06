@@ -1,5 +1,9 @@
 package br.com.murilo.ecommercepucapp.service.model;
 
+/**
+ * Classe utilizada como modelo de resultado de requisições entre cliente e servidor
+ * @author murilocosta
+ */
 public class RequestResult<T> {
 
     private boolean requestSuccessful;

@@ -1,5 +1,9 @@
 package br.com.murilo.ecommercepuc.model;
 
+/**
+ * Classe utilizado como modelo de login para troca de mensagens entre cliente e servidor
+ * @author murilocosta
+ */
 public class Login {
 	
 	private String login;

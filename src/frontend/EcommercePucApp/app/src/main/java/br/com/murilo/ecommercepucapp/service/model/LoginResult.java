@@ -2,6 +2,10 @@ package br.com.murilo.ecommercepucapp.service.model;
 
 import br.com.murilo.ecommercepucapp.entity.User;
 
+/**
+ * Classe utilizada como modelo de resposta de login utilizada em mensagens cliente e servidor
+ * @author murilocosta
+ */
 public class LoginResult {
 
     private boolean loginSuccessful;

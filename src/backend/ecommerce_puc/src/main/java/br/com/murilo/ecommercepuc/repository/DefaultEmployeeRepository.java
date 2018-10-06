@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 
 import br.com.murilo.ecommercepuc.entity.Employee;
 
+/**
+ * Classe contendo a implementação do repositório de funcionários
+ * @author murilocosta
+ */
 @Repository
 @Qualifier("employeeRepository")
 public class DefaultEmployeeRepository implements EmployeeRepository {
