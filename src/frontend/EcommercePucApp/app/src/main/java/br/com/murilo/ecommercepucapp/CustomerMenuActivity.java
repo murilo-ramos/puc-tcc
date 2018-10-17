@@ -22,7 +22,13 @@ public class CustomerMenuActivity extends AppCompatActivity {
         this.setContentView(R.layout.activity_customer_menu);
         this.initialize();
     }
-    
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        this.startActivity(intent);
+    }
+
     private void initialize() {
         this.productSearchButton = findViewById(R.id.customerMenuProductSearchButton);
         this.cartButton = findViewById(R.id.customerMenuCartButton);

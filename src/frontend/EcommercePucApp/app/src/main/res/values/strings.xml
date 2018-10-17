@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EcommercePucApp</string>
+    <string name="app_label">Ecommerce PUC</string>
 </resources>

@@ -1,5 +1,6 @@
 package br.com.murilo.ecommercepucapp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 
 import br.com.murilo.ecommercepucapp.application.AuthenticationData;
 import br.com.murilo.ecommercepucapp.application.ClientFactory;
+import br.com.murilo.ecommercepucapp.application.IndeterminateProgressDialog;
 import br.com.murilo.ecommercepucapp.application.Logger;
 import br.com.murilo.ecommercepucapp.application.MessageUtil;
 import br.com.murilo.ecommercepucapp.entity.User;
@@ -49,6 +51,11 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+    }
+
     private void initialize() {
         this.loginEditText = findViewById(R.id.loginEditText);
         this.passwordEditText = findViewById(R.id.loginPasswordEditText);
@@ -85,6 +92,9 @@ public class LoginActivity extends AppCompatActivity {
 
         Call<LoginResult> result = loginClient.login(user);
 
+        final IndeterminateProgressDialog progressDialog = new IndeterminateProgressDialog(this, "Autenticando...");
+        progressDialog.show();
+
         result.enqueue(new Callback<LoginResult>() {
             @Override
             public void onResponse(Call<LoginResult> call, Response<LoginResult> response) {
@@ -95,6 +105,8 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     performLogin(result.getUser());
                 }
+
+                progressDialog.close();
             }
 
             @Override
@@ -102,6 +114,8 @@ public class LoginActivity extends AppCompatActivity {
                 MessageUtil.showLongToast(LoginActivity.this, "Ocorreu um erro na autenticação!");
                 LOGGER.error(t.getMessage());
                 t.printStackTrace();
+
+                progressDialog.close();
             }
         });
     }

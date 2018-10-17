@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import br.com.murilo.ecommercepucapp.application.ClientFactory;
+import br.com.murilo.ecommercepucapp.application.IndeterminateProgressDialog;
 import br.com.murilo.ecommercepucapp.application.Logger;
 import br.com.murilo.ecommercepucapp.application.MessageUtil;
 import br.com.murilo.ecommercepucapp.entity.Customer;
@@ -116,6 +117,9 @@ public class CustomerEnrollmentUpdateActivity extends AppCompatActivity {
             requestResult = customerClient.add(customer);
         }
 
+        final IndeterminateProgressDialog progressDialog = new IndeterminateProgressDialog(this, "Aguarde...");
+        progressDialog.show();
+
         requestResult.enqueue(new Callback<RequestResult<Customer>>() {
             @Override
             public void onResponse(Call<RequestResult<Customer>> call, Response<RequestResult<Customer>> response) {
@@ -127,12 +131,15 @@ public class CustomerEnrollmentUpdateActivity extends AppCompatActivity {
                     MessageUtil.showLongToast(CustomerEnrollmentUpdateActivity.this, result.getMessage());
                     backToCustomerManagement();
                 }
+
+                progressDialog.close();
             }
 
             @Override
             public void onFailure(Call<RequestResult<Customer>> call, Throwable t) {
                 MessageUtil.showLongToast(CustomerEnrollmentUpdateActivity.this, "Ocorreu um erro ao salvar cliente!");
                 LOGGER.error(t.getMessage());
+                progressDialog.close();
             }
         });
     }

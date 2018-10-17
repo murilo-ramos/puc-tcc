@@ -1,5 +1,6 @@
 package br.com.murilo.ecommercepucapp.application;
 
+import br.com.murilo.ecommercepucapp.BuildConfig;
 import br.com.murilo.ecommercepucapp.service.CustomerClient;
 import br.com.murilo.ecommercepucapp.service.LoginClient;
 import retrofit2.Retrofit;
@@ -38,7 +39,7 @@ public class ClientFactory {
 
     private Retrofit buildRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.106:8080/ecommerce-puc/")
+                .baseUrl(BuildConfig.BASE_URL)
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
 
